@@ -68,7 +68,7 @@ def login(server, username, password, cert_loc):
     base64string = base64.b64encode(message_bytes)
     ##string convertido a base64 en: https://www.base64encode.org/
     ##String para FMC
-    authstring = "Basic Z2h1ZXJ0YTo2RXJAcmQwLjE3MDU4MzU3"
+    authstring = "Basic "base64encodedmessage"
     print(authstring)
     headers = {'Authorization' : authstring}
 
